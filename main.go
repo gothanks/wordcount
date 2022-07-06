@@ -8,7 +8,10 @@ import (
 
 func main() {
 	args := os.Args
+	if string(args[1]) == "" {
+		fmt.Println(0)
+	}
 	arr := strings.Split(args[1], " ")
-	fmt.Println(len(arr) - 1)
+	fmt.Println(len(arr))
 
 }
