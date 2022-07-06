@@ -12,9 +12,9 @@ func TestWordcount(t *testing.T) {
 		name, in, want string
 	}{
 		{"empty", "", "0"},
-		{"single", "ok", "1"},
-		{"several", "go is awesome", "3"},
-		{"even more", "php - not so much", "5"},
+		{"single", "ok", "0},
+		{"several", "go is awesome", "2},
+		{"even more", "php - not so much", "4},
 	}
 
 	for _, test := range tests {
